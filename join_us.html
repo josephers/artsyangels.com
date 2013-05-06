@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<!-- theme design and code by http://ptcampbell.me -->
+
+<html>
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<title>artsyangels</title>
+		<link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_43fdac297c01_16.png" />
+    <link rel="alternate" type="application/rss+xml" href="http://artsyangels.com/rss"/>
+		<!-- YUI Reset CSS -->
+		<link rel="stylesheet" type="text/css" media="screen" href="http://static.tumblr.com/fkm6sn6/YbRl5zqmg/reset-min.css"/>	
+		<link href='http://fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
+		<meta name="description" content="it all starts with love..."/>
+		<!-- Tumblr Appearance Settings -->
+		<meta name="if:Single Column" content="0" />
+		<meta name="image:Header" content="http://static.tumblr.com/fkm6sn6/59Xlce272/header_white.png"/>
+		<meta name="if:Show Title" content="1"/>
+		<meta name="if:Top Navigation Drawer" content="1"/>
+		<meta name="if:To Top Button" content="1"/>	
+		<meta name="color:Background" content="#F7F7F7"/>
+		<meta name="image:Background" content=""/>
+		<meta name="color:Content Background" content="#FFFFFF"/>
+		<meta name="color:Stripe" content="#F7F7F7"/>
+		<meta name="text:Disqus Shortname" content=""/>
+		<meta name="text:Google Analytics Code" content=""/>
+		<!-- JS -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://static.tumblr.com/fkm6sn6/lbNl5zqhv/jquery.scrollto-1.4.2-min.js"></script>
+		<!-- Top Drawer Code-->
+		
+		<!-- Scroll Code -->
+		
+			<script type="text/javascript" src="http://static.tumblr.com/fkm6sn6/KPql5zqgf/jquery.localscroll-1.2.7-min.js"></script>
+			<script type="text/javascript">
+				<!--
+				$(document).ready(function()
+				{
+				$.localScroll({
+						queue:true,
+						duration:1000
+				});
+				});
+				-->
+			</script>
+			<script type="text/javascript">
+				$(function () {
+					$(window).scroll(function () {
+						if ($(this).scrollTop() != 0) {
+							$('#toTop').fadeIn();
+						} else {
+							$('#toTop').fadeOut();
+						}
+					});
+					$('#toTop').click(function () {
+						$('body,html').animate({
+							scrollTop: 0
+						},
+						800);
+					});
+				});
+			</script>
+      <script>
+              $(document).ready(function(){
+                $("#ss-form").validate();
+              });
+              </script>
+		<style type="text/css">
+
+			/* INKHORN CSS */
+			html, body {
+			font-size:0.9em;
+			font-family:Georgia,'Times New Roman',serif;
+			margin:0;
+      min-height: 100%;
+      height: 100%;
+			}
+
+			p {
+			font-family:Georgia,'Times New Roman',serif;
+			line-height:1.45em;
+			margin-bottom:1.45em;
+			}
+			p:last-of-type {
+			margin-bottom:0.725em;
+			}
+			strong {
+			font-weight:700;
+			}
+			a:hover {
+			color:rgb(0,0,0);
+			color:rgba(0,0,0,.4);
+			}
+			em {
+			font-style:italic;
+			}
+			h1 {
+			font-family:'OFL Sorts Mill Goudy TT', Georgia, serif;
+			font-size:2.5em;
+			margin-bottom:25px;
+			}
+			h1 a:link,h1 a:visited,h3 a:link,h3 a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0,0,0,.8);
+			text-decoration:none;
+			}
+			h3 {
+			font-family:'OFL Sorts Mill Goudy TT', Georgia, serif;
+			font-size:1.56em;
+			line-height:1.3em;
+			font-weight:700;
+			margin-bottom:1em;
+			}
+			#sliderWrap {
+			width:100%;
+			}
+			#slider {
+			position:absolute;
+			background:url('http://static.tumblr.com/fkm6sn6/sU9lcaggb/navbg.png') repeat-x;
+			background-position:bottom;
+			width:100%;
+			height:41px;
+			margin-top:-31px;
+			}
+			
+			#sliderContent {
+			position:absolute;
+			width:99%;
+			padding:0.714em 0em 0em .429em;
+			}
+			
+			#toTop {
+			width:59px;
+			height:53px;
+			background:url('http://static.tumblr.com/fkm6sn6/AvWlb7jjb/totop.png');
+			position:fixed;
+			bottom:20px;
+			right:0;
+			cursor:pointer;
+			display:none;
+			}
+			
+			#main{
+			width:750px;
+			min-height: 900px;
+			padding:0px 15px 0px 15px;
+			margin:0 auto;
+			}
+			
+			#openCloseWrap {
+			position:absolute;
+			font-size:0.857em;
+			font-weight:700;
+			margin:0em 0em 0em 3.5em;
+			}
+			
+			.header{
+			padding-top:40px;
+			margin-bottom:40px;
+			}
+			
+			.headerimage{
+			margin-bottom:25px;
+			}
+			
+			.linebreak{
+			margin:0px auto;
+			background-color:rgb(0,0,0);
+			background-color:rgba(0, 0, 0, 0.8);
+			width:35px;
+			height:10px;
+			}
+			
+			.centre {
+			text-align:center;
+			}
+			
+			.footer {
+			color:rgb(0,0,0);
+			color: rgba(0, 0, 0, 0.4);
+			font-size: 0.714em;
+			letter-spacing: 2px;
+			padding: 20px 0px 40px;
+			text-align: center;
+			text-transform: uppercase;
+			}
+			
+			.footer p {
+			margin-bottom:0em;
+			}
+			
+			.footer a:link,.footer a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.8);
+			text-decoration:none;
+			}
+			
+			.footer a:hover {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.6);
+			}
+			
+			.content {
+			width:700px;
+			}
+			
+			.post {
+			width:270px;
+			float:left;
+			text-align:justify;
+			margin:0px 0px 30px 60px;
+			}
+			
+			.clear {
+			clear:both;
+			}
+			
+			blockquote {
+			border-left:2px solid rgba(0,0,0,.2);
+			margin:15px 0 15px 15px;
+			padding:0 15px;
+			}
+			
+			.photo p,.video p {
+			text-align:left;
+			font-style:italic;
+			margin:5px 0;
+			}
+			
+			.player {
+			background:rgba(0,0,0,.05);
+			text-align:center;
+			margin-bottom:10px;
+			padding:23px;
+			}
+
+			.quote p{
+			text-align:right;
+			}
+
+			.quote h3{
+      text-align:right;
+			}
+			.quote.short h3 {
+			font-size:1.571em;
+			line-height:28px;
+			padding-left:25px;
+			background:url('http://static.tumblr.com/fkm6sn6/dYIlcdkfu/quote.png') no-repeat top left;
+			}
+			.quote.medium h3,.quote.long h3 {
+			font-size:1.5em;
+			padding-left:25px;
+			line-height:26px;
+			background:url('http://static.tumblr.com/fkm6sn6/dYIlcdkfu/quote.png') no-repeat top left;
+			}
+			.post.permalink h3 {
+			font-size:1.571em;
+			line-height:27px;
+			text-align:center;
+			background:url('http://static.tumblr.com/fkm6sn6/dYIlcdkfu/quote.png') no-repeat top left;
+			padding:0 28px;
+			}
+			
+			.timestamp {
+			text-transform:uppercase;	
+			letter-spacing:2px;
+			font-size:0.714em;
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.6);
+			}
+			.timestamp_right {
+			text-transform:uppercase;
+			letter-spacing:2px;
+			font-size:0.714em;
+			text-align:right;
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.6);
+			}
+			.timestamp a:link,.timestamp a:visited,.timestamp_right a:link,.timestamp_right a:visited {
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.6);
+			text-decoration:none;
+			}
+			.timestamp a:hover {
+			color:rgb(0, 0, 0);
+			color:rgba(0, 0, 0, 0.4);
+			}
+			.pagination {
+			padding:5px 0;
+			}
+			.subtitle {
+			text-transform:uppercase;
+			letter-spacing:2px;
+			margin:60px auto;
+			margin-bottom:25px;
+			padding:10px;
+			border-top:1px solid;
+			border-bottom:1px solid;
+			width:400px;
+			line-height:25px;
+			}
+			.pages li{
+			display:inline;
+			text-transform:uppercase;
+			letter-spacing:2px;
+			margin-right:1em;
+			}
+			.pages a:link,.footer a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.8);
+			text-decoration:none;
+			}
+			.pages li a:hover {
+			color: rgba(0, 0, 0, 0.597656);
+			text-decoration:none;
+			}
+			.pages a:link,.footer a:visited {
+			color:rgb(0,0,0);
+			color:rgba(0, 0, 0, 0.8);
+			text-decoration:none;
+			}
+			.pages{
+			margin-bottom:25px;
+			}
+      .bodytype {
+        font-size: 1.1em;
+      }
+			.bodytype ul,.bodytype ol {
+			margin:1.35em 2em;
+			}
+			.bodytype ol li {
+			list-style-type:decimal;
+			}
+			.bodytype li {
+			line-height:1.4;
+			list-style-type:disc;
+			margin:.45em 0;
+			}
+			.bodytype ol ol,.bodytype ul ul {
+			margin:.75em 2em;
+			}
+			.bodytype li ol li {
+			list-style-type:lower-alpha;
+			}
+
+			.bodytype li ul li {
+			list-style-type:circle;
+			}
+			#menu {
+			width:780px;
+			position:relative;
+			margin:0 auto;
+			padding:0;
+			}
+			#menu li {
+			display:inline;
+			}
+			#menu .leftside li {
+			padding-right:10px;
+			}
+      .heading {
+        margin-bottom: 70px;
+      }
+			#menu .leftside {
+			float:left;
+			}
+			#menu .rightside {
+			float:right;
+			}
+			#search {
+			position:absolute;
+			right:0;
+			top:-5px;
+			}
+			#search_field {
+			background:url("http://static.tumblr.com/fkm6sn6/IV8lbt8qk/search.png") #363331 140px 5px;
+			background-repeat:no-repeat;
+			border:1px solid #4e4d4c;
+			color:#4E4D4C;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+			padding-left:10px;
+			height:22px;
+			width:152px;
+			font-size:0.857em;
+			}
+			a:link,a:visited,h1 a:hover,h3 a:hover {
+			color:rgba(0,0,0);
+			color:rgba(0,0,0,.6);
+			}
+			.single .post,.single .chat table {
+			width:600px;
+			}
+			.photo,.video {
+			background:rgba(0,0,0,.05);
+			padding:10px;
+			}
+			.photopage img{
+			text-align:center;
+			background:rgba(0,0,0,.05);
+			padding:10px;
+			}
+			.notes img.avatar,#search_button {
+			display:none;
+			}
+			#disqus_thread {
+			width:100%;
+			}
+			#disqus_thread h3 {
+			background:none;
+			font-size:1.143em;
+			text-align:left;
+			padding-left:0px;;
+			}
+      </style>
+      <style type="text/css">
+			html, body {
+      min-height: 100%;
+			background:#c9c3c8 url('http://assets.tumblr.com/images/x.gif');
+			}
+			#main{
+			background-color:#FFFFFF;
+      min-height: 100%;
+			}
+			#innerborder{
+      min-height: 900px;
+			border-left:15px solid #c9c3c8;
+			border-right:15px solid #c9c3c8;
+			}
+			.post {
+				width:520px;
+				text-align:justify;
+				margin:0px auto;
+				margin-bottom:50px;
+				float:none;
+				}
+			.single .post,.single .chat table {
+			width:520px;
+			}
+			.post h3{
+			text-align:center;
+			padding:0px 28px;
+			}
+			.timestamp, .timestamp_right{
+			text-align:center;
+			float:none;
+			margin-top:20px;
+			}
+			.chat table{
+			width:520px;
+			}
+			.quote h3{
+			text-align:center;
+			padding-left:30px;
+			}
+			.quote p{
+			text-align:center;
+			}
+			.audio{
+			text-align:center;
+			}
+			#menu{
+			width:730px;
+			}
+			.photo p,.video p {
+			text-align:center;
+			font-style:normal;
+			margin:0px;
+			}
+			.photo {
+			text-align:center;
+			background:none;
+			padding:0px;
+			}
+			.photo img{
+			background:rgba(0,0,0,.05);
+			padding:10px;
+			margin-bottom:15px;
+			}
+      
+      form {
+              margin: 0 0 18px;
+            }
+            fieldset {
+              padding: 0;
+              margin: 0;
+              border: 0;
+            }
+            legend {
+              display: block;
+              width: 100%;
+              padding: 0;
+              margin-bottom: 27px;
+              font-size: 19.5px;
+              line-height: 36px;
+              color: #333333;
+              border: 0;
+              border-bottom: 1px solid #eee;
+            }
+            legend small {
+              font-size: 13.5px;
+              color: #999999;
+            }
+            label,
+            input,
+            button,
+            select,
+            textarea {
+              font-size: 13px;
+              font-weight: normal;
+              line-height: 18px;
+            }
+            input,
+            button,
+            select,
+            textarea {
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            label {
+              display: block;
+              margin-bottom: 5px;
+              color: #333333;
+            }
+            input,
+            textarea,
+            select,
+            .uneditable-input {
+              display: inline-block;
+              width: 210px;
+              height: 18px;
+              padding: 4px;
+              margin-bottom: 9px;
+              font-size: 13px;
+              line-height: 18px;
+              color: #555555;
+              border: 1px solid #ccc;
+              -webkit-border-radius: 3px;
+              -moz-border-radius: 3px;
+              border-radius: 3px;
+            }
+            .uneditable-textarea {
+              width: auto;
+              height: auto;
+            }
+            label input, label textarea, label select {
+              display: block;
+            }
+            input[type="image"], input[type="checkbox"], input[type="radio"] {
+              width: auto;
+              height: auto;
+              padding: 0;
+              margin: 3px 0;
+              *margin-top: 0;
+              /* IE7 */
+
+              line-height: normal;
+              cursor: pointer;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              border-radius: 0;
+              border: 0 \9;
+              /* IE9 and down */
+
+            }
+            input[type="image"] {
+              border: 0;
+            }
+            input[type="file"] {
+              width: auto;
+              padding: initial;
+              line-height: initial;
+              border: initial;
+              background-color: #ffffff;
+              background-color: initial;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+            }
+            input[type="button"], input[type="reset"], input[type="submit"] {
+              width: auto;
+              height: auto;
+            }
+            select, input[type="file"] {
+              height: 28px;
+              /* In IE7, the height of the select element cannot be changed by height, only font-size */
+
+              *margin-top: 4px;
+              /* For IE7, add top margin to align select with labels */
+
+              line-height: 28px;
+            }
+            input[type="file"] {
+              line-height: 18px \9;
+            }
+            select {
+              width: 220px;
+              background-color: #ffffff;
+            }
+            select[multiple], select[size] {
+              height: auto;
+            }
+            input[type="image"] {
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+            }
+            textarea {
+              height: auto;
+            }
+            input[type="hidden"] {
+              display: none;
+            }
+            .radio, .checkbox {
+              padding-left: 18px;
+            }
+            .radio input[type="radio"], .checkbox input[type="checkbox"] {
+              float: left;
+              margin-left: -18px;
+            }
+            .controls > .radio:first-child, .controls > .checkbox:first-child {
+              padding-top: 5px;
+            }
+            .radio.inline, .checkbox.inline {
+              display: inline-block;
+              padding-top: 5px;
+              margin-bottom: 0;
+              vertical-align: middle;
+            }
+            .radio.inline + .radio.inline, .checkbox.inline + .checkbox.inline {
+              margin-left: 10px;
+            }
+            input, textarea {
+              -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+              -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+              -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+              -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+              transition: border linear 0.2s, box-shadow linear 0.2s;
+            }
+            input:focus, textarea:focus {
+              border-color: rgba(82, 168, 236, 0.8);
+              -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+              -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+              outline: 0;
+              outline: thin dotted \9;
+              /* IE6-9 */
+
+            }
+            input[type="file"]:focus,
+            input[type="radio"]:focus,
+            input[type="checkbox"]:focus,
+            select:focus {
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              outline: thin dotted #333;
+              outline: 5px auto -webkit-focus-ring-color;
+              outline-offset: -2px;
+            }
+            .input-mini {
+              width: 60px;
+            }
+            .input-small {
+              width: 90px;
+            }
+            .input-medium {
+              width: 150px;
+            }
+            .input-large {
+              width: 210px;
+            }
+            .input-xlarge {
+              width: 270px;
+            }
+            .input-xxlarge {
+              width: 530px;
+            }
+            input[class*="span"],
+            select[class*="span"],
+            textarea[class*="span"],
+            .uneditable-input {
+              float: none;
+              margin-left: 0;
+            }
+            .form-search input,
+            .form-inline input,
+            .form-horizontal input,
+            .form-search textarea,
+            .form-inline textarea,
+            .form-horizontal textarea,
+            .form-search select,
+            .form-inline select,
+            .form-horizontal select,
+            .form-search .help-inline,
+            .form-inline .help-inline,
+            .form-horizontal .help-inline,
+            .form-search .uneditable-input,
+            .form-inline .uneditable-input,
+            .form-horizontal .uneditable-input {
+              display: inline-block;
+              margin-bottom: 0;
+            }
+            .form-search .hide, .form-inline .hide, .form-horizontal .hide {
+              display: none;
+            }
+            .form-search label,
+            .form-inline label,
+            .form-search .input-append,
+            .form-inline .input-append,
+            .form-search .input-prepend,
+            .form-inline .input-prepend {
+              display: inline-block;
+            }
+            .form-search .input-append .add-on,
+            .form-inline .input-prepend .add-on,
+            .form-search .input-append .add-on,
+            .form-inline .input-prepend .add-on {
+              vertical-align: middle;
+            }
+            .form-search .radio,
+            .form-inline .radio,
+            .form-search .checkbox,
+            .form-inline .checkbox {
+              margin-bottom: 0;
+              vertical-align: middle;
+            }
+            .control-group {
+              margin-bottom: 9px;
+            }
+            legend + .control-group {
+              margin-top: 18px;
+              -webkit-margin-top-collapse: separate;
+            }
+            .form-horizontal .control-group {
+              margin-bottom: 18px;
+              *zoom: 1;
+            }
+            .form-horizontal .control-group:before, .form-horizontal .control-group:after {
+              display: table;
+              content: "";
+            }
+            .form-horizontal .control-group:after {
+              clear: both;
+            }
+            .form-horizontal .control-label {
+              float: left;
+              width: 140px;
+              padding-top: 5px;
+              text-align: right;
+            }
+            .form-horizontal .controls {
+              margin-left: 160px;
+            }
+            .form-horizontal .form-actions {
+              padding-left: 160px;
+            }
+		</style> <!-- Tumblr Appearance Options CSS -->
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- Read more: http://ogp.me/ -->
+<meta property="fb:app_id" content="48119224995" />
+<meta property="og:title" content="artsyangels" />
+<meta property="og:url" content="http://artsyangels.com/" />
+<meta property="og:description" content="it all starts with love..." />
+<meta property="og:type" content="tumblr-feed:tumblelog" />
+<meta property="og:image" content="http://25.media.tumblr.com/avatar_43fdac297c01_128.png" />
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+</head> <!-- CLOSE HEAD -->
+
+<body>
+  <div id="sliderWrap">
+		<div id="openCloseIdentifier"></div>
+		<div id="slider">
+			<div id="sliderContent">
+				<div class="centre">
+					<ul id="menu">
+						<div class="leftside">
+							<li><a href="http://blog.artsyangels.com/rss">
+                <img src="http://static.tumblr.com/fkm6sn6/kKqlbt3cm/rss_12x12.png" alt="Subscribe via RSS"/></li>
+							<li><a href="http://blog.artsyangels.com/archive">
+                <img src="http://static.tumblr.com/fkm6sn6/25albt3b7/calendar_12x12.png" alt="View Archive"/></a></li>
+							<li><a href="http://blog.artsyangels.com/ask">
+                <img src="http://static.tumblr.com/fkm6sn6/prSlep19w/question_12x12.png" alt="Ask a question"/></a></li>
+						</div>
+						<div class="rightside">
+							<li>
+								<form id="search" method="get" action="http://blog.artsyangels.com/search">
+									<fieldset>
+                    <input type="text" value="" id="search_field" name="q" class="empty">
+                    <input type="submit" value="Search" id="search_button">
+									</fieldset>
+								</form>
+							</li>
+						</div>
+						<div class="clear"></div>
+					</ul>
+				</div>
+			</div>
+			<div id="openCloseWrap">
+				<a href="#" class="topMenuAction" id="topMenuImage">
+					<img src="http://static.tumblr.com/fkm6sn6/0n9lb7jpq/topnavbutton.png" alt="Show Navigation" />
+				</a>
+			</div>
+		</div>
+	</div><!-- END OF NAVIGATION DRAWER -->
+		<div id="toTop"></div> <!-- Scroll to top Ribbon -->
+    <div id="main" >
+    <div id="innerborder">
+		<div class="header centre">
+			<a href="/"><img src="http://static.tumblr.com/0szae2a/dUYmdz4zh/wings_grey.jpg" class="headerimage" alt=""/></a>
+			<h1 class="heading"><a href="/">artsyangels</a></h1>
+			<ul class="pages"><li><a href="/index">Home</a></li><li><a href="/vision">Vision</a></li><li><a href="/mission">Mission</a></li><li><a href="/join_us">Join</a></li><li><a href="/contact_us">Contact-Us</a></li></ul>
+			<div class="subtitle">it all starts with love...</div>
+    </div>
+
+    <div class="post">
+
+				<div class="centre">
+					<h3><a href="">Join us</a></h3><p>Tell us a bit about yourself.</p>
+				</div>
+				<div class="bodytype">
+
+    <div class="ss-form"><form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhNZlN1djF3dU1TdFZPczhHb2w0eGc6MQ&amp;theme=0AX42CRMsmRFbUy03NTAzM2Q4My03ODU1LTQ2NzItODI2YS1kZmU5YzdiMzZjOGQ&amp;ifq" method="POST" id="ss-form" target="redirect" onsubmit="submitted=true;" class="form-horizontal" novalidate="novalidate">
+
+    <br>
+    <div class="control-group"><label class="control-label" for="entry_0">First Name</label>
+    <div class="controls"><input type="text" name="entry.0.single" value="" class="required" id="entry_0"></div></div>
+
+    <div class="control-group"><label class="control-label" for="entry_1">Last Name</label>
+    <div class="controls"><input type="text" name="entry.1.single" value="" class="required" id="entry_1"></div></div>
+
+    <div class="control-group"><label class="control-label" for="entry_2">Email address</label>
+    <div class="controls"><input type="text" name="entry.2.single" value="" class="required email" id="entry_2"></div></div>
+
+    <div class="control-group">
+      <label class="control-label" for="entry_12">City and country</label>
+      <div class="controls">
+        <input type="text" name="entry.12.single" value="" class="ss-q-short" id="entry_12"></div>
+      </div>
+
+    <div class="control-group"><label class="control-label" for="entry_3">Age Group</label>
+      <div class="controls">
+    <select name="entry.3.single" id="entry_3" class="required"><option value="19 and younger">19 and younger</option> <option value="20 ~ 29">20 ~ 29</option> <option value="30 ~ 39">30 ~ 39</option> <option value="40 ~ 49">40 ~ 49</option> <option value="50 ~ 59">50 ~ 59</option> <option value="60 and over">60 and over</option></select></div></div>
+
+    <h4 class="centre"><br>What is your skill? Click all that apply.<br><br></h4>
+    <div class="control-group">
+      <div class="controls">
+    <label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Graphic design" class="ss-q-checkbox" id="group_4_1">
+    Graphic design</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Industrial/product design" class="ss-q-checkbox" id="group_4_2">
+    Industrial/product design</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Web design" class="ss-q-checkbox" id="group_4_3">
+    Web design</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Fashion design" class="ss-q-checkbox" id="group_4_4">
+    Fashion design</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Film/Video" class="ss-q-checkbox" id="group_4_5">
+    Film/Video</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Photography" class="ss-q-checkbox" id="group_4_6">
+    Photography</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Illustration" class="ss-q-checkbox" id="group_4_7">
+    Illustration</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Painting" class="ss-q-checkbox" id="group_4_8">
+    Painting</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Textile" class="ss-q-checkbox" id="group_4_9">
+    Textile</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Ceramic" class="ss-q-checkbox" id="group_4_10">
+    Ceramic</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Print media" class="ss-q-checkbox" id="group_4_11">
+    Print media</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Sculpture" class="ss-q-checkbox" id="group_4_12">
+    Sculpture</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Craft" class="ss-q-checkbox" id="group_4_13">
+    Craft</label><label class="ss-choice-label"><input type="checkbox" name="entry.4.group" value="Knitting/Crochet" class="ss-q-checkbox" id="group_4_14">
+    Knitting/Crochet</label>
+    </div>
+    <div class="control-group">
+    <label for="other_option:4" class="control-label">Other:</label>
+    <div class="controls">
+      <input type="checkbox" name="entry.4.group" value="__option__" class="ss-q-checkbox" id="other_option:4">
+      <input type="text" name="entry.4.group.other_option_" class="input-medium"></div>
+    </div>
+
+    <div class="control-group"><label class="control-label" for="entry_5">Any comments?</label>
+      <div class="controls">
+      <textarea name="entry.5.single" id="entry_5" rows="5"></textarea></div>
+    </div>
+
+    <div class="ss-radio"><div class="control-group">
+      <h4 class="centre">Would you like to be contacted when new projects come in?<br><br></h4>
+
+      <div class="controls">
+        <label for="entry.11.group"></label>
+    <label class="ss-choice-label"><input type="radio" name="entry.11.group" value="Yes" class="ss-q-radio required" id="group_11_1" checked="">
+    Yes</label><label><input type="radio" name="entry.11.group" value="No" class="ss-q-radio required" id="group_11_2">
+    No</label></div></div></div>
+    <br>
+    <input type="hidden" name="pageNumber" value="0">
+    <input type="hidden" name="backupCache" value="">
+
+    <div class="controls center">
+    <input type="submit" name="submit" value="Submit" class="btn btn-primary btn-large"></div></form></div>
+
+          <div class="clear"></div>
+    		</div> <!-- end main -->
+    <!-- Redirect form code -->
+    <script type="text/javascript">var submitted=false;</script>
+        <iframe id="redirect" style="display:none;" onload="if(submitted) {window.location='http://artsyangels.com/thankyou';}"></iframe>
+          <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dE02TlBHQ2hnVVdkTE5ya0lBYXhaMlE6MQ&amp;ifq" method="post">
+    <!-- End redirect form code -->
+    		
+    </form></div>
+
+    <div class="clear"></div>
+    <!-- End Mason -->
+    <div class="footer">
+      <p><img src="http://static.tumblr.com/fkm6sn6/r6Bl9bdgd/footer_bullet.png" alt=""/></p>	
+    </div> <!-- end FOOTER -->
+  </div> <!-- end main -->
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39056567-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	<script type="text/javascript" src="http://static.tumblr.com/fkm6sn6/uFWlbyg0u/drawer.js"></script>
+</body>
+</html>
